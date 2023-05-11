@@ -45,7 +45,7 @@ model = AutoModelForCausalLM.from_pretrained(
     peft_config.base_model_name_or_path,
     return_dict=True,
     torch_dtype=torch.float16,
-    load_in_8bit_fp32_cpu_offload=True
+    load_in_8bit_fp32_cpu_offload=True,
     # ValueError: Loading THUDM/chatglm-6b requires you to execute the configuration file in that repo on your local machine. Make sure you have read the code there to avoid malicious use, then set the option `trust_remote_code=True` to remove this error.
     # trust_remote_code=True,
 )
